@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.39.0/gradio.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="main-container" id="main">
+        <div class="description-container">
+            <div class="profile-section">
+                <div class="profile-pic-container">
+                    <div class="profile-pic">
+                        <img class='student-pic' src="https://herobot.app/wp-content/uploads/2022/11/AI-bot-1.jpg" alt="ProfilePic" />
+                    </div>
+                </div>
+                <div class="profile-info-container">
+                    <h3 class="name">Pujitha Kondapally</h3>
+                    <p class="bot-extra-info">CSE Undergrad | A coding enthusiast</p>
+                </div>
+            </div>
+            <div class="project-details-container">
+                <div class="project-heading">
+                    <h1 class="heading">Generative AI Project</h1>
+                </div>
+                <div class="project-description">
+                    <p class="description">The PDF Query Tool dynamically scans user-provided PDFs, generating real-time, accurate responses to user queries. Powered by advanced Large Language Models (LLMs) and Google's API, it ensures efficient and reliable information retrieval.</p>
+                </div>
+            </div>
+
+            <div class="i-have-learnt-section">
+                <p class="i-have-learnt">I've used:</p>
+                <div class="topics-list">
+                    <div class="topic-icon">
+                        <div class="tooltip" id="google-ai">
+                            <img src="https://static-00.iconduck.com/assets.00/google-icon-2048x2048-tmg5cp5v.png" class="zoom-svg langchain-logo" />
+                            <span class="tooltiptext">Google's AI Studio</span>
+                        </div>
+                    </div>
+                    <div class="topic-icon">
+                        <div class="tooltip" id="langChain">
+                            <img src="https://res.cloudinary.com/davztmw2w/image/upload/v1690651288/image_301_m0b2pw.png" class="zoom-svg langchain-logo" />
+                            <span class="tooltiptext">LangChain</span>
+                        </div>
+                    </div>
+                    <div class="topic-icon">
+                        <div class="tooltip" id="gradio">
+                            <img src="https://res.cloudinary.com/davztmw2w/image/upload/v1690650885/image_297_1_jrfh7o.jpg" class="zoom-svg gradio-logo" />
+                            <span class="tooltiptext">Gradio</span>
+                        </div>
+                    </div>
+                    <div class="topic-icon">
+                        <div class="tooltip" id="huggingFace">
+                            <img src="https://res.cloudinary.com/davztmw2w/image/upload/v1690651476/image_300_c8gpca.png" class="zoom-svg hugging-face-logo" />
+                            <span class="tooltiptext">Hugging Face</span>
+                        </div>
+                    </div>                   
+                    <div class="topic-icon">
+                        <div class="tooltip" id="googleColab">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvyuHWMd6UOi4d_oVuHTBZsGvS7kG6TFK2yQ&s" class="zoom-svg hugging-face-logo" />
+                            <span class="tooltiptext">Google Colab</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-section"></div>
+            </div>
+        </div>
+        <div class="chat-bot-container">
+            <gradio-app src="https://pujitha04-chatwithpdf.hf.space"></gradio-app>
+        </div>
+    </div>
+
+</body>
+
+</html>
